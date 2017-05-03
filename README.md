@@ -9,9 +9,11 @@ First of all, build a simple [blink](http://www.thirdeyevis.com/pi-page-2.php) p
 
 ### Installation
 
-```
+``` terminal
+# install python telegram bot library
 $ pip install python-telegram-bot
 
+# clone repo
 $ git clone git@github.com:jgabrielfreitas/telegram-led-bot.git
 $ cd telegram-led-bot/
 $ python ledbot.py
