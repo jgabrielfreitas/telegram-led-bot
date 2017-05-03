@@ -12,10 +12,12 @@ GPIO.setmode(GPIO.BOARD)
 #Define pin 12 as output
 GPIO.setup(pin_default, GPIO.OUT)
 
-# def start(bot, update):
+def start(bot, update):
+	ledon()
     
 
-# def stop(bot, update):
+def stop(bot, update):
+	ledoff()
 
 def ledon(pin_led = pin_default):
     GPIO.output(pin_led, ON)
@@ -23,12 +25,11 @@ def ledon(pin_led = pin_default):
 def ledoff(pin_led = pin_default):
     GPIO.output(pin_led, OFF)
     
-
 def message(bot, update):
 	print(update.message.text)
 
-updater.dispatcher.add_handler(CommandHandler('on', ledon))
-updater.dispatcher.add_handler(CommandHandler('off', ledoff))
+updater.dispatcher.add_handler(CommandHandler('on', start))
+updater.dispatcher.add_handler(CommandHandler('off', stop))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, message))
 
 updater.start_polling()
