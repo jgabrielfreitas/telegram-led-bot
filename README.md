@@ -1,5 +1,5 @@
-# telegram-led-bot
-bot to turn on and turn off a raspberry led via Telegram (for fun)
+# Telegram Led Bot
+bot to turn on and off a raspberry led via Telegram (just a playground to learn how to work with both technologies)
 
 First of all, build a simple [blink](http://www.thirdeyevis.com/pi-page-2.php) project
 
