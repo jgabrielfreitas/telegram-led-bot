@@ -1,6 +1,5 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import RPi.GPIO as GPIO
-import RPi.GPIO as GPIO
 
 BOT_TOKEN   = "351567687:AAHgnFGUOG0Cg7sEIEM0PoEbywOLNmzkESg"
 updater     = Updater(BOT_TOKEN)
@@ -15,7 +14,6 @@ GPIO.setup(pin_default, GPIO.OUT)
 def start(bot, update):
 	ledon()
     
-
 def stop(bot, update):
 	ledoff()
 
