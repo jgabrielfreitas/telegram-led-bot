@@ -4,8 +4,8 @@ import RPi.GPIO as GPIO
 BOT_TOKEN   = "351567687:AAHgnFGUOG0Cg7sEIEM0PoEbywOLNmzkESg"
 updater     = Updater(BOT_TOKEN)
 pin_default = 12        
-ON 			= 1
-OFF 		= 0                  
+ON  = 1
+OFF = 0                  
 GPIO.setmode(GPIO.BOARD)
 
 #Define pin 12 as output
